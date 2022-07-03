@@ -34,9 +34,9 @@
       const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
       if(regEx.test(document.getElementById("email").value)){
        
-        fetch('https://seamlesssupport-fgbivk.codecapsules.co.za', {
+        fetch('http://10.90.138.106:5000/', {
           method: 'POST',
-         url: 'https://seamlesssupport-fgbivk.codecapsules.co.za/chat'        })
+         url: 'http://10.90.138.106:5000/chat'        })
        form.setAttribute("action", "./chat.html");
       }else{
         alert("Invalid Email");
@@ -48,9 +48,9 @@
 document.getElementById("frm").onsubmit = function () {
         const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
       if(regEx.test(document.getElementById("email").value)){
-        fetch('https://seamlesssupport-fgbivk.codecapsules.co.za', {
+        fetch('http://10.90.138.106:5000/', {
           method: 'POST',
-         url: 'https://seamlesssupport-fgbivk.codecapsules.co.za/chat'        })
+         url: 'http://10.90.138.106:5000/chat'        })
        form.setAttribute("action", "./chat.html");
    
       }else{
